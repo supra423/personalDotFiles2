@@ -1,0 +1,107 @@
+// -*- mode: jsonc -*-
+{
+    "height": 25,
+    "width": 1850,
+    "spacing": 10,
+    "modules-left": [
+        "network",
+        "pulseaudio",
+        "power-profiles-daemon",
+		"custom/bluetooth",
+		"custom/wofi"
+    ],
+    "modules-center": [
+        "sway/workspaces"
+    ],
+    "modules-right": [
+        "memory",
+        "temperature",
+		"cpu",
+        "battery",
+        "clock"
+    ],
+    "custom/wofi": {
+    	"format": "",
+		"tooltip-format": "App launcher",
+		"on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun -i -G"
+    },
+	"custom/bluetooth": {
+		"format": "",
+		"on-click": "blueman-manager"
+	},
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}\nFORMAT:YYYY-MM-DD</small></tt>",
+		"format": "{:%H:%M:%S} ",
+        "format-alt": "{:%Y-%m-%d} ",
+		"interval": 1
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": true,
+    },
+    "memory": {
+        "format": "{}% ",
+		"tooltip-format": "{used}GiB/{total}GiB ram used"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+	"format-icons": ["", "", ""]
+
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""],
+		"interval": 5
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        /*"default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""*/
+        "default": "P",
+        "performance": "P",
+        "balanced": "B",
+        "power-saver": "S"
+      }
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+		"on-click": "networkmanager_dmenu -G"
+		
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": " {icon}  {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pwvucontrol"
+    },
+}

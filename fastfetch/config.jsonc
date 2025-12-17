@@ -1,0 +1,156 @@
+{
+  "logo": {
+		"color": {
+			"1": "#D949F9",
+			"2": "#D949F9"
+		}
+  },
+
+  "display": {
+	"separator": " -> ",
+	"color": {
+		"separator": "#D949F9"
+	}
+  },
+
+  "modules": [
+    {
+		"type": "title",
+		"color": {
+			"user": "#D949F9",
+			"at": "#FFFFFF",
+			"host": "#D949F9"
+		}
+	},
+
+	"separator",
+
+
+    {
+		"type": "os",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type": "host",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"kernel",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"uptime",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"packages",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"shell",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"display",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"de",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"wm",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"wmtheme",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"theme",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"icons",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"font",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"cursor",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"terminal",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"terminalfont",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"cpu",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"gpu",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"memory",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"swap",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"disk",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"localip",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"battery",   
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"poweradapter",
+		"keyColor": "#D949F9"
+	},
+
+    {
+		"type":"locale",
+		"keyColor": "#D949F9"
+	},
+	"break",
+	"colors"
+  ]
+}
