@@ -4,19 +4,15 @@
 }
 
 .modules-left,
-/* .modules-center, */
 .modules-right {
-	background-color: rgba(161, 81, 211, 1);
-	padding-right: 10px;
-	padding-left: 10px;
+	background-color: #461f67;
+	border: solid 3px #a151d3;
 	border-radius: 15px;
+	margin: 2px 2px;
 }
 
 window#waybar {
     background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
 }
 
 window#waybar.hidden {
@@ -25,11 +21,9 @@ window#waybar.hidden {
 
 
 window#waybar.termite {
-    background-color: #3F3F3F;
 }
 
 window#waybar.chromium {
-    background-color: #000000;
     border: none;
 }
 
@@ -37,7 +31,7 @@ button {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0px 5px;
     border-radius: 5px;
     margin: 0px 2px;
     background-color: #461f67;
@@ -70,13 +64,13 @@ button {
 #power-profiles-daemon,
 #mpd,
 #custom-wofi,
-#custom-bluetooth{
-    padding: 2px 20px;
-	margin: 3px 0px;
+#custom-bluetooth,
+#tray {
+    padding: 0px 20px;
+	margin: 2px 2px;
     color: #ffffff;
-	background-color: #321445;
-	border: 2px solid #c078ed;
-	border-radius: 15px;
+	/* border: solid 2px #c078ed; */
+	border-radius: 11px;
 }
 
 #clock:hover,
@@ -89,13 +83,13 @@ button {
 #power-profiles-daemon:hover,
 #mpd:hover,
 #custom-wofi:hover,
-#custom-bluetooth:hover{
-    padding: 2px 20px;
-	margin: 3px 0px;
+#custom-bluetooth:hover,
+#tray:hover {
+    padding: 0px 20px;
+	margin: 2px 2px;
     color: #ffffff;
     background-color: #c078ed;
-	border: 2px solid #c078ed;
-    border-radius: 15px;
+    border-radius: 11px;
 }
 
 #window,
