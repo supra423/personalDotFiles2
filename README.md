@@ -5,3 +5,5 @@ I switched from Hyprland to Sway here, didn't thought it would be this good tbh,
 Sway isn't too bad! Credits to Diinki though, I stole their Wofi config lol.
 I also have this "oomox-eboda2" which is a theme to load using dconf-editor,
 this changes the theme of apps that use GTK.
+
+![rice](images/rice.png)
