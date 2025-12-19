@@ -6,4 +6,4 @@ Sway isn't too bad! Credits to Diinki though, I stole their Wofi config lol.
 I also have this "oomox-eboda2" which is a theme to load using dconf-editor,
 this changes the theme of apps that use GTK.
 
-![rice](images/rice.png)
+![Alt text](demo/demo.gif)
