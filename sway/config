@@ -1,6 +1,6 @@
 # Default config for sway
 #
-# Copy this to ~/.config/sway/config and edit it to your liking.
+
 #
 # Read `man 5 sway` for a complete reference.
 
@@ -28,6 +28,8 @@ set $term foot
 
 exec swaybg -i ~/.config/sway/wallpapers/purple-anime-girl.png -m fill
 exec waybar
+exec xwayland :1 &
+exec nm-applet
 # exec_always waybar
 
 ### Idle configuration
@@ -63,7 +65,7 @@ exec swayidle -w \
     # Start a terminal
     bindsym $mod+q exec $term
 
-	bindsym $mod+shift+e exec nemo
+	bindsym $mod+shift+e exec thunar
 
     # Kill focused window
     bindsym $mod+c kill
@@ -185,8 +187,8 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
     bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
-    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 2%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 2%+
     bindsym Print exec --no-startup-id slurp | grim -g - ~/Pictures/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
 include /etc/sway/config.d/*

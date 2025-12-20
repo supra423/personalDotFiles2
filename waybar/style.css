@@ -39,11 +39,12 @@ button {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 1);
+    background: #000000;
 }
 
 #workspaces button.focused {
     background-color: #bb82df;
+	border-bottom: 3px solid #ffffff;
 }
 
 #workspaces button.urgent {
@@ -59,7 +60,6 @@ button {
 #cpu,
 #memory,
 #temperature,
-#network,
 #pulseaudio,
 #power-profiles-daemon,
 #mpd,
@@ -68,8 +68,7 @@ button {
 #tray {
     padding: 0px 20px;
 	margin: 2px 2px;
-    color: #ffffff;
-	/* border: solid 2px #c078ed; */
+    color: #000000;
 	border-radius: 11px;
 }
 
@@ -78,7 +77,6 @@ button {
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
-#network:hover,
 #pulseaudio:hover,
 #power-profiles-daemon:hover,
 #mpd:hover,
@@ -88,11 +86,50 @@ button {
     padding: 0px 20px;
 	margin: 2px 2px;
     color: #ffffff;
-    background-color: #c078ed;
+    background-color: #a151d3;
     border-radius: 11px;
 }
 
-#window,
+#tray {
+    background-color: #ffadad;
+}
+
+#pulseaudio {
+    background-color: #fdffb6;
+}
+
+#power-profiles-daemon {
+    background-color: #ffd6a5;
+}
+
+#custom-bluetooth {
+    background-color: #caffbf;
+}
+
+#custom-wofi {
+    background-color: #98F6FF;
+}
+
+#memory {
+    background-color: #ffadad;
+}
+
+#temperature {
+    background-color: #fdffb6;
+}
+
+#cpu {
+    background-color: #ffd6a5;
+}
+
+#battery {
+    background-color: #caffbf;
+}
+
+#clock {
+    background-color: #98F6FF;
+}
+
 #workspaces {
     margin: 0 4px;
 }
@@ -107,8 +144,8 @@ button {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #a151d3;
+        color: #461f67;
     }
 }
 
@@ -122,9 +159,9 @@ button {
     animation-direction: alternate;
 }
 
-#network.disconnected {
-    background-color: #f53c3c;
-}
+/* #network.disconnected { */
+/*     background-color: #f53c3c; */
+/* } */
 
 #pulseaudio.muted {
     background-color: #90b1b1;

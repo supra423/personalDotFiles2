@@ -4,7 +4,6 @@
     "width": 1850,
     "spacing": 10,
     "modules-left": [
-        "network",
 		"tray",
         "pulseaudio",
         "power-profiles-daemon",
@@ -82,14 +81,6 @@
         "power-saver": "S"
       }
     },
-    "network": {
-        "format-wifi": "",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-		"on-click": "networkmanager_dmenu -G"
-		
-    },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon}  {format_source}",
@@ -104,7 +95,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["  ", "  ", "  "]
         },
         "on-click": "pavucontrol"
     },
