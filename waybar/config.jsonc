@@ -1,25 +1,28 @@
 // -*- mode: jsonc -*-
+
 {
     "height": 20,
     "width": 1850,
     "spacing": 10,
     "modules-left": [
-		"tray",
-        "pulseaudio",
-        "power-profiles-daemon",
-		"custom/bluetooth",
-		"custom/wofi"
+			"tray",
+			"pulseaudio",
+			"power-profiles-daemon",
+			"custom/bluetooth",
+			"custom/wofi"
     ],
     "modules-center": [
         "sway/workspaces"
+        // "hyprland/workspaces"
     ],
     "modules-right": [
         "memory",
         "temperature",
-		"cpu",
+				"cpu",
         "battery",
         "clock"
     ],
+
     "custom/wofi": {
     	"format": "",
 		"tooltip-format": "App launcher",
@@ -30,7 +33,7 @@
 		"on-click": "blueman-manager"
 	},
 	"tray": {
-		"spacing": 10,
+		"spacing": 10
 	},
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}\nFORMAT:YYYY-MM-DD</small></tt>",
@@ -40,7 +43,7 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": true,
+        "tooltip": true
     },
     "memory": {
         "format": "{}% ",
